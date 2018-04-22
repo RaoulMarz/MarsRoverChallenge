@@ -17,7 +17,6 @@ public class RoverFleetTesting {
 	@Before
 	   public void initialize() {
 			roverFleetChecker = new RoverFleetTestParameters();
-			expected = true;
 	   }
 	
 	 public RoverFleetTesting(String inputToken, Boolean expected) {

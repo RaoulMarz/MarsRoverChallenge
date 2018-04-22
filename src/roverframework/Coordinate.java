@@ -36,6 +36,16 @@ public class Coordinate {
 		}
 	}
 	
+	@Override
+	public boolean equals(Object o) {
+	    if (this == o) return true;
+	    if (o == null || getClass() != o.getClass()) return false;
+	    
+	    Coordinate compareCrd = (Coordinate)o;
+	    return (compareCrd.getX() == getX()) && (compareCrd.getY() == getY());
+	}
+	
+	@Override
 	public String toString() {
 		return Integer.toString(x) + " " + Integer.toString(y);
 	}
